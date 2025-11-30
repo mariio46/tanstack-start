@@ -3,13 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --port 3034",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --port 3034",
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check"
+    "check": "biome check",
+    "preview": "vite build && vite preview --port 3034"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
